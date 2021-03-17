@@ -1,4 +1,4 @@
-#container {
+.container {
   width: 700px;
   margin: 0 auto;
 }
@@ -16,7 +16,7 @@
   height: 300px;
   width: 400px;
 }
-#chatSection {
+.chatSection {
   float: left;
   border: 1px grey solid;
   border-radius: 10px;

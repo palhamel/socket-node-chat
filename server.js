@@ -1,13 +1,19 @@
 const express = require('express')
-
 const app = express()
 const server = require('http').createServer(app)
 const port = process.env.PORT || 3000
 
+const io = require('socket.io')(server)
+
 const path = require('path')
+
 app.use(express.static(path.join(__dirname + '/public'))) // express.static to serve the static file index.html.
 
-app.get('/', (req, res) => res.send('🤖 Hello Server here!'))
+// app.get('/', (req, res) => res.send('🤖 Hello Server here!'))
+
+io.on('connection', socket => {
+  console.log('🥳 client connected')
+})
 
 server.listen(port, () => console.log(`✅ Server running on port ${port}!`))
 /**
