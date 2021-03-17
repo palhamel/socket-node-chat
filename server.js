@@ -13,6 +13,9 @@ app.use(express.static(path.join(__dirname + '/public'))) // express.static to s
 
 io.on('connection', socket => {
   console.log('🥳 client connected')
+  socket.on('chat', message => {
+    console.log('From client:', message)
+  })
 })
 
 server.listen(port, () => console.log(`✅ Server running on port ${port}!`))
