@@ -15,3 +15,7 @@ chat.addEventListener('submit', event => {
   input.value = ''
 })
 
+socket.on('chat', message => {
+  console.log('From server:', message)
+})
+
