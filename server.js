@@ -22,7 +22,7 @@ io.on('connection', socket => {
 
 
 
-server.listen(port, () => console.log(`✅ Server running on port ${port}!`))
+server.listen(port, () => console.log(`✅ Server running on localhost:${port}!`))
 /**
  * The server.listen is used to bootstrap the server by passing a valid port. 
  * Generally, in an Express app, you'd find app.listen() instead of server.listen() but that is not the case in apps consuming Socket.io.
