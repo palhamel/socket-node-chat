@@ -6,28 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
     <title>Chat with the cat</title>
   </head>
   <body>
-    <div class="ui raised very padded text container segment">
+    <h2 class="ui center aligned header">Chat app with node/socket io</h2>
+    <div class="ui text container">
+     
+        
 
-      <div class="chat-container">
-        <h1>Chat app with node and socket io</h1>
-        <div class="chatSection">
-          <div class="chat-window"></div>
-          <form class="chat-form">
-            <label class="chat-label">
-              Enter a message:
-              <input type="text" class="chat-input" />
-            </label>
-            <!-- <input type="submit" class="chat-submit " value="Send"> -->
-            <button type="submit" class="ui orange button" value="Send">Send</button>
-          </form>
-        </div>
-      </div>
+          <div class="chat-container ui text container">
+            <div class="chatSection ui text container">
+              <div class="chat-window ui segments"></div>
+              <form class="chat-form ui form">
+                <!-- <label class="chat-label"> Enter a message</label> -->
+                <div class="ui fluid icon input">
+                  <!-- Enter a message: -->
+                  <input
+                    type="text"
+                    class="chat-input"
+                    placeholder="Enter a message.."
+                  />
+                </div>
+                <!-- <input type="submit" class="chat-submit " value="Send"> -->
+                <br>
+                <button type="submit" class="ui orange button" value="Send">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
 
-
+      
     </div>
     <script src="socket.io/socket.io.js"></script>
     <script src="script.js"></script>

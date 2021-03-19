@@ -1,5 +1,5 @@
 .chat-container {
-  width: 700px;
+  /* width: 700px; */
   margin: 0 auto;
 }
 .chat-input {
@@ -15,17 +15,17 @@
 }
 .chat-window {
   height: 300px;
-  width: 400px;
+  /* width: 400px; */
 }
 .chatSection {
   float: left;
-  border: 1px grey solid;
+  border: 1px grey dotted;
   border-radius: 10px;
   padding: 10px;
 }
 
 .chat-label {
-  color: rgb(0, 0, 0);
+  color: rgb(82, 142, 23);
 }
 
 .chat-window {
@@ -35,9 +35,14 @@
 
 body {
   font-family:Arial, Helvetica, sans-serif;
-  background-color: rgb(50, 55, 58)
+  background-color: rgb(27, 118, 172)
 }
 
 h1 {
   color: rgb(0, 0, 0)
+}
+
+.render-message {
+  font-size: 16px;
+  color: cornflowerblue;
 }
